@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 80rem;
+    background: radial-gradient(#280a48, #20043d);
+    
+    line-height: 1.5;
+    font-family: "Quicksand", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    color: #ebe7ef;
+}
+
+
+
+main {
+    margin: auto;
+    width: 90%;
+    max-width: 50rem;
+
+  h2 {
+        margin: 0 0 1.5rem 0;
+        font-family: "Roboto Condensed", sans-serif;
+        text-align: center;
+        color: #a18aba;
+    }
+}
+
+
+#core-concepts {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    padding: 2rem;
+    background-color: #140524;
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+            width: 10rem;
+            text-align: center;
+
+            img {
+                width: 6rem;
+                height: 4rem;
+                object-fit: cover;
+            }
+        }
+
+        h3 {
+            margin: 0.5rem 0;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+    }
+}
+
+#examples {
+    margin: 3rem auto;
+
+    h2 {
+        text-align: left;
+    }
+
+    menu {
+        display: flex;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        padding: 0;
+        list-style: none;
+
+        button {
+            transition: all 0.2s ease-in-out;
+            border: none;
+            border-radius: 6px;
+            padding: 0.5rem 1rem;
+            background-color: transparent;
+            font-size: 1rem;
+            font-family: "Roboto Condensed", sans-serif;
+            color: #a18aba;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #1b082f;
+                color: #ebe7ef;
+            }
+
+            &.active {
+                background-color: #7925d3;
+                color: #ebe7ef;
+            }
+        }
+    }
+
+    pre {
+        border-radius: 0.5rem;
+        padding: 1rem;
+        background: rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+#tab-content {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    padding: 1rem;
+    background-color: #2f1d43;
+}
+
+#tab-content h3 {
+    margin: 0;
+}
+
+#tab-content code {
+    font-size: 1rem;
+}
